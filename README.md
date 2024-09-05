@@ -32,7 +32,7 @@ Before running the project, ensure that you have the following installed on your
 
 ## Usage
 
-### 1. Prepare Images for Recognition
+1. Prepare Images for Recognition
 Ensure the images of the known people are stored locally. Load these images in the script and create encodings for them as follows:
 
 ```python
