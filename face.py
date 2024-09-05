@@ -9,10 +9,10 @@ video_capture = cv2.VideoCapture(0)
 # Load known images
 deepanshi_image = face_recognition.load_image_file("deep.jpg")
 deepanshi_encoding = face_recognition.face_encodings(deepanshi_image)[0]
-name2_image = face_recognition.load_image_file("deep2.jpg")
-name2_encoding = face_recognition.face_encodings(name2_image)[0]
-known_face_encodings = [deepanshi_encoding, name2_encoding]
-known_face_names = ["deepanshi", "name2"]
+sundarP_image = face_recognition.load_image_file("Sundar_Pichai.jpg")
+sundarP_encoding = face_recognition.face_encodings(sundarP_image)[0]
+known_face_encodings = [deepanshi_encoding, sundarP_encoding]
+known_face_names = ["Deepanshi", "Sundar Pichai"]
 
 # Initialize CSV filename
 csv_filename = None
@@ -41,7 +41,7 @@ while True:
 
             # Create or update CSV file with the recognized name in the filename
             if not csv_filename:
-                csv_filename = f"{name}_{current_date}.csv"
+                csv_filename = f"{current_date}.csv"
                 f = open(csv_filename, "w+", newline='')
                 csv_writer = csv.writer(f)
                 csv_writer.writerow(["Name", "Time"])  # Add header to CSV
