@@ -1,4 +1,4 @@
-# Real-time Smart Face Logger
+# Real-time Smart Face Logger ![](https://img.shields.io/badge/python-3.8.6-blue.svg)
 
 This project implements a real-time face recognition system that logs the recognized faces with timestamps into a CSV file. The project uses `face_recognition` and `OpenCV` libraries to identify and track faces from a video feed (via webcam), then records the name of the person and the time they were recognized.
 
@@ -14,10 +14,10 @@ This project implements a real-time face recognition system that logs the recogn
 
 Before you begin, ensure you have the following installed on your system:
 
-- Python 3.x
+- Python 3.8
 - `opencv-python`
 - `numpy`
-- `face-recognition` (This library requires `dlib` to be installed. Refer to the [face_recognition](https://github.com/ageitgey/face_recognition) installation guide for detailed steps.)
+- `face-recognition` (This library requires `dlib` to be installed.)
 
 ## Installation
 
@@ -26,3 +26,17 @@ Before you begin, ensure you have the following installed on your system:
 
    ```bash
    pip install opencv-python numpy face-recognition
+3. Place the images of the people you want to recognize in the same directory as the code. Update the filenames in the script accordingly.
+
+## Usage
+
+Modify the code to include images of the individuals you'd like to recognize, and update the `known_face_names` and `known_face_encodings` with their corresponding details.
+
+**Example:**
+
+  ```c
+  known_face_names = ["deepanshi", "name2"]
+  known_face_encodings = [deepanshi_encoding, name2_encoding]
+  ```
+
+
