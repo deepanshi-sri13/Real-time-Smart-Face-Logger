@@ -50,7 +50,7 @@ known_face_names = ["Deepanshi", "Sundar Pichai"]
 ```
 2. Run the script:
    ```c
-   python smart_face_logger.py
+   python face.py
    ```
 3. The system will start the webcam feed, detect faces, and log recognized faces into a CSV file named after the date.
 
